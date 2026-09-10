@@ -125,3 +125,25 @@ skills/vibehub/
 ## 许可
 
 [MIT](LICENSE)
+
+## 配置、依赖与使用边界
+
+需要 Node.js 与联网能力；运行 bundled 术语解析脚本即可，无账号或 API Key 配置。
+
+只查询脱敏后的短术语，不发送源代码、客户信息或整段需求；引用解析器实际返回的词条 URL，不拼接链接。
+
+使用示例：
+
+```text
+鼠标放到按钮上显示一行说明，这叫什么？
+```
+
+## GitHub 安装
+
+把 [仓库地址](https://github.com/oil-oil/vibe-hub-skill) 交给 Agent，要求按 README 安装；也可运行：
+
+```bash
+npx skills add oil-oil/vibe-hub-skill
+```
+
+安装后由宿主重新加载 Skill。
